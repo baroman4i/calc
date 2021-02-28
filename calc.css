@@ -1,0 +1,176 @@
+@import url("../style.css");
+* {
+    margin: 0;
+    padding:0;
+    color: var(--main-color);
+}
+.app {
+    margin: auto;
+    font-size: 22px;
+    overflow: hidden;
+    width: 90vw;
+    height: 84vh;
+    position: relative;
+}
+.type-auto {
+    position: relative;
+    /*border: 2px solid orangered;*/
+    margin: 10px auto 20px auto;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.type-auto:after {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10%;
+    height: 30%;
+    border: 2px solid orangered;
+    border-top: none;
+    border-left: none;
+}
+.type-auto:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:  10%;
+    height: 30%;
+    border: 2px solid orangered;
+    border-bottom: none;
+    border-right: none;
+}
+.auto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    height: 82%;
+    cursor: pointer;
+    padding: 5px 10px 8px 10px;
+    border: 3px solid var(--bg-color);
+    min-width: 230px;
+}
+.auto img {
+    width: 100px;
+}
+.auto .models {
+    font-size: 18px;
+    color: #888888;
+}
+.auto.active {
+    background-color: rgba(255, 69, 0, 0.3);
+    border: 3px solid orangered;
+}
+.auto:hover {
+    background-color: rgba(255, 69, 0, 0.1);
+}
+.components {
+    /*border: 2px solid orangered;*/
+    height: 80px;
+    margin: 10px auto 20px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+.components:after {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10%;
+    height: 30%;
+    border: 2px solid orangered;
+    border-top: none;
+    border-left: none;
+}
+.components:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:  10%;
+    height: 30%;
+    border: 2px solid orangered;
+    border-bottom: none;
+    border-right: none;
+}
+.component {
+    min-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    height: 80px;
+    box-sizing: border-box;
+    border: 3px solid var(--bg-color);
+    cursor: pointer;
+    padding: 5px 10px 8px 10px;
+}
+.component.open {
+    border: 3px solid orangered;
+}
+.component.active {
+    background-color: rgba(255, 69, 0, 0.3);
+}
+.component:hover {
+    background-color: rgba(255, 69, 0, 0.1);
+}
+.materials {
+    width: 500px;
+    /*border: 2px solid orangered;*/
+    margin: 10px auto 20px 0;
+    position: relative;
+}
+.materials:after {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10%;
+    height: 30%;
+    border: 2px solid orangered;
+    border-top: none;
+    border-left: none;
+}
+.materials:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:  10%;
+    height: 30%;
+    border: 2px solid orangered;
+    border-bottom: none;
+    border-right: none;
+}
+.material {
+    padding: 5px 10px 8px 10px;
+    cursor: pointer;
+    border: 3px solid var(--bg-color);
+}
+.material.active {
+    background-color: rgba(255, 69, 0, 0.3);
+    border: 3px solid orangered;
+}
+.material:hover {
+    background-color: rgba(255, 69, 0, 0.1);
+}
+.price {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 30px;
+    width: 250px;
+    background-color: orangered;
+    height: 100px;
+}
